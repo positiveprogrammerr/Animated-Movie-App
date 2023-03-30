@@ -133,13 +133,7 @@ class _MyDrawerState extends State<MyDrawer> {
                   style: TextStyle(color: Colors.white, fontSize: 17),
                 ),
                 onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) =>AddMoviePage(addNewMovie: add, categoryList: categories,))).then((value) {
-                     if(value!=null){
-                     setState(() {
-                       
-                     });
-                    }
-                  });
+                  Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) =>AddMoviePage(addNewMovie: add, categoryList: categories,)));
                 }
               ),
             ],

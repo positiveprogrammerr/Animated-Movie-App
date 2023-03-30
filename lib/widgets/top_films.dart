@@ -13,7 +13,6 @@ class TopFilms extends StatelessWidget {
   Widget build(BuildContext context) {
     final movies = Provider.of<MoviesModel>(context).movies;
     final categories = Provider.of<CategoriesModel>(context).categories;
-    final function = Provider.of<MoviesModel>(context);
     final size = MediaQuery.of(context).size;
 
     // Filter the movies by category ID
